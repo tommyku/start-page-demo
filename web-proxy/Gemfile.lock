@@ -1,0 +1,34 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.7.0)
+    faraday (0.10.0)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.1)
+      faraday
+      hashie
+      multi_json
+    hashie (3.4.6)
+    multi_json (1.12.1)
+    multipart-post (2.0.0)
+    rack (1.6.5)
+    rack-protection (1.5.3)
+      rack
+    sinatra (1.4.7)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-cross_origin (0.3.2)
+    tilt (2.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print!
+  forecast_io!
+  sinatra!
+  sinatra-cross_origin (~> 0.3.1)!
+
+BUNDLED WITH
+   1.13.6
