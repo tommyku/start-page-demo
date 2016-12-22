@@ -2,7 +2,7 @@ request = require 'superagent'
 
 module.exports = {
   getWeather: ()->
-    request.get('http://0.0.0.0:1081/weather')
+    request.get('http://0.0.0.0:1080/weather')
 
   getWeatherIcon: (icon)->
     return icon = 'clear' if icon.match /clear/

@@ -20,6 +20,10 @@ gulp.task('webpack', function(callback) {
 
 gulp.task('build', ['html', 'webpack']);
 
-gulp.task('default', ['build'], function() {
+gulp.task('watch', function() {
+  gulp.watch("src/html/**/*.pug", ['html']);
+});
+
+gulp.task('default', ['build', 'watch'], function() {
   // pass
 });
