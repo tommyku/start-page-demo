@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server ./output"
   },
   "author": "",
   "devDependencies": {
@@ -13,7 +13,7 @@
     "css-loader": "^0.26.1",
     "gulp": "^3.9.1",
     "gulp-pug": "^3.2.0",
-    "http-server": "^0.9.0",
+    "live-server": "^1.1.0",
     "node-sass": "^4.1.1",
     "pug": "^2.0.0-beta6",
     "sass-loader": "^4.1.1",
