@@ -11,6 +11,6 @@ RUN bundle
 
 COPY server.rb /app/
 
-ADD views /app/views
+EXPOSE 1080
 
 CMD ["ruby", "server.rb"]
