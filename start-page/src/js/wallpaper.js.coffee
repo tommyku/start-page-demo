@@ -26,11 +26,11 @@ class WallpaperPanel
     {
       backgroundColor: if @is_day() then 'white' else 'black'
       color: 'white'
-      backgroundImage: "url('./static/#{@wallpapers[Math.floor(Math.random()*@wallpapers.length)]}')"
+      #backgroundImage: "url('./static/#{@wallpapers[Math.floor(Math.random()*@wallpapers.length)]}')"
+      backgroundImage: "url('./static/#{@wallpapers[8]}')"
     }
 
   bootstrap: ->
-    console.dir @bodyStyle()
     $('body').css @bodyStyle()
 
 module.exports = WallpaperPanel

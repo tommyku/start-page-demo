@@ -7,9 +7,11 @@ class WeatherPanel
     Math.round(parseFloat(@report.temperature, 10)).toString()
 
   updatePage: ->
-    console.debug @report
+    $img = $('<img>')
+    $img.prop 'src', "static/weatherIcons/#{@report.icon}.png"
     $('.temperature').html "#{@lo @report.temperature}&deg;"
     $('.summary').html @report.current_summary
+    $('.summary').after $img
 
   getWeatherHandler: (err, res)->
     return unless res? && res.body.currently?
