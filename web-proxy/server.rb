@@ -17,5 +17,5 @@ ForecastIO.api_key = 'YOUR_DARK_SKY_API_KEY'
 
 get '/weather' do
   content_type :json
-  ForecastIO.forecast(22.3986, 114.1929, params: {exclude: 'minutely,daily,alerts,flags', units: :si, lang: 'zh-tw'}).to_json
+  ForecastIO.forecast(22.3986, 114.1929, params: {exclude: 'minutely,daily,alerts,flags', units: :si, lang: 'en'}).to_json
 end
