@@ -2,9 +2,11 @@ html
   head
     script(type='text/javascript' src='bundle.js' async)
   body
-    section.dateTime
-      time.time
-      br
-      br
-      br
-      time.date
+    .grid-container
+      section.dateTime
+        time.date
+        br
+        time.time
+      section.weather
+        span.summary
+        sup.temperature

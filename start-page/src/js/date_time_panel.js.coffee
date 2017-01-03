@@ -20,10 +20,8 @@ class DateTimePanel
 
   bootstrap: ->
     timeString =
-      "#{@lo @now.getHours()}:#{@lo @now.getMinutes()} #{@z @now.getHours()}"
-    dateString = [
-      "#{@WEEKDAYS[@now.getDay()]} #{@lo @now.getDate()} "
-      "#{@MONTHS[@now.getMonth()]} #{@now.getFullYear()}" ].join('')
+      "#{@lo @now.getHours()}:#{@lo @now.getMinutes()}"
+    dateString = "#{@MONTHS[@now.getMonth()]} #{@lo @now.getDate()}"
     $('time.time').html timeString
     $('time.date').html dateString
 

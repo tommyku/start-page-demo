@@ -3,8 +3,13 @@ store   = require 'store'
 weather = require './weather.js.coffee'
 
 class WeatherPanel
+  lo: (temperature)->
+    Math.round(parseFloat(@report.temperature, 10)).toString()
+
   updatePage: ->
     console.debug @report
+    $('.temperature').html "#{@lo @report.temperature}&deg;"
+    $('.summary').html @report.current_summary
 
   getWeatherHandler: (err, res)->
     return unless res? && res.body.currently?

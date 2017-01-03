@@ -7,7 +7,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.scss$/, loader: "style-loader!css-loader!sass-loader" },
+      { test: /\.scss$/, loader: "style-loader!css-loader?importLoaders=1!sass-loader!postcss-loader" },
       { test: /\.coffee$/, loader: "coffee-loader" },
     ]
   }

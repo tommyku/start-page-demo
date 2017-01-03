@@ -1,0 +1,44 @@
+html, body {
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% auto;
+}
+
+.dateTime {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: 300;
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .time {
+    font-size: 1.5rem;
+  }
+}
+
+.weather {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-weight: 300;
+  text-align: right;
+
+  .summary {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    vertical-align: top;
+    font-size: 1rem;
+  }
+}
