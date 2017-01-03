@@ -18,7 +18,12 @@ gulp.task('webpack', function(callback) {
   );
 });
 
-gulp.task('build', ['html', 'webpack']);
+gulp.task('static', function() {
+  gulp.src(['src/static/**/*'], { base: 'src/static' })
+      .pipe(gulp.dest('./output/static'));
+});
+
+gulp.task('build', ['html', 'webpack', 'static']);
 
 gulp.task('watch', function() {
   gulp.watch("src/html/**/*.pug", ['html']);
