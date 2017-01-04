@@ -1,0 +1,11 @@
+{
+  "name": "Start page demo",
+  "description": "New tab replacer demo",
+  "version": "0.1",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "manifest_version": 2
+}

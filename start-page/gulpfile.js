@@ -21,6 +21,8 @@ gulp.task('webpack', function(callback) {
 gulp.task('static', function() {
   gulp.src(['src/static/**/*'], { base: 'src/static' })
       .pipe(gulp.dest('./output/static'));
+  gulp.src(['src/manifest.json'], { base: 'src' })
+      .pipe(gulp.dest('./output/'));
 });
 
 gulp.task('build', ['html', 'webpack', 'static']);
