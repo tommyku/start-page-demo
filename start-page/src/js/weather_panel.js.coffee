@@ -7,11 +7,10 @@ class WeatherPanel
     Math.round(parseFloat(@report.temperature, 10)).toString()
 
   updatePage: ->
-    $img = $('<img>')
-    $img.prop 'src', "static/weatherIcons/#{@report.icon}.png"
+    return unless @report?
     $('.temperature').html "#{@lo @report.temperature}&deg;"
     $('.summary').html @report.current_summary
-    $('.summary').after $img
+    $('.weather-icon').prop src: "static/weatherIcons/#{@report.icon}.png"
 
   getWeatherHandler: (err, res)->
     return unless res? && res.body.currently?
@@ -27,5 +26,7 @@ class WeatherPanel
   bootstrap: ->
     weather.getWeather().end (err, res)=>
       @getWeatherHandler(err, res)
+    @report = store.get 'weather.report'
+    @updatePage()
 
 module.exports = WeatherPanel

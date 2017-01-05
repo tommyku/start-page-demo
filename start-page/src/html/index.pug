@@ -2,6 +2,7 @@ html
   head
     script(type='text/javascript' src='bundle.js' async)
   body
+    .mask
     .grid-container
       section.dateTime
         time.date
@@ -9,6 +10,7 @@ html
         time.time
       section.weather
         span.summary
+        img.weather-icon
         br
         span.temperature
       section.search

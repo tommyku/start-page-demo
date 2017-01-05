@@ -2,12 +2,25 @@ html, body {
   margin: 0;
   padding: 0;
   //font-family: 'Halvetica nene', sans-serif;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Ubuntu Mono', 'Monaco', monospace;
   font-size: 48px;
   line-height: 1.7rem;
   font-weight: 300;
   background-size: cover;
   background-position: center center;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 10000;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  will-change: opacity;
 }
 
 .grid-container {
