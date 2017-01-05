@@ -10,19 +10,6 @@ html, body {
   background-position: center center;
 }
 
-.mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  z-index: 10000;
-  opacity: 1;
-  transition: opacity 0.2s linear;
-  will-change: opacity;
-}
-
 .grid-container {
   height: 100vh;
   display: grid;
