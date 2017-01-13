@@ -5,7 +5,10 @@ DateTimePanel = require './date_time_panel.js.coffee'
 Wallpaper = require './wallpaper.js.coffee'
 
 unMask = ->
-  $('.mask').css 'opacity', 0
+  $('.mask').css {
+    opacity: 0,
+    'pointer-events': 'none'
+  }
 
 $ ->
   (new Wallpaper()).bootstrap()
