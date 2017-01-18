@@ -5,7 +5,7 @@ class DateTimePanel
     'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'
   ]
   MONTHS: [
-    'JUN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP',
+    'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP',
     'OCT', 'NOV', 'DEC'
   ]
 
