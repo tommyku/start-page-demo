@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server --content-base ./output"
+    "serve": "webpack-dev-server --content-base ./output",
+    "build": "gulp build"
   },
   "author": "",
   "devDependencies": {

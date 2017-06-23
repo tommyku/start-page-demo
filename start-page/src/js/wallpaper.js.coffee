@@ -13,6 +13,7 @@ class WallpaperPanel
     'ResurrectionBay_EN-US9938760197_1920x1200.jpg'
     'RicePaddyVideo_EN-US9637810719_1920x1200.jpg'
     'SachsischeSchweiz_EN-US11350891933_1920x1200.jpg'
+    'kcuk96x9l55z.jpg'
   ]
 
   is_day: ->
@@ -27,7 +28,7 @@ class WallpaperPanel
       backgroundColor: if @is_day() then 'white' else 'black'
       color: 'white'
       #backgroundImage: "url('./static/#{@wallpapers[Math.floor(Math.random()*@wallpapers.length)]}')"
-      backgroundImage: "url('./static/#{@wallpapers[8]}')"
+      backgroundImage: "url('./static/#{@wallpapers[11]}')"
     }
 
   bootstrap: ->
